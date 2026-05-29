@@ -79,14 +79,15 @@ header .tagline {
   flex-wrap: wrap;
 }
 .store-badges a {
-  display: inline-block;
-  padding: 14px 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
   background: var(--text);
   color: white;
   text-decoration: none;
   border-radius: 12px;
-  font-size: 15px;
-  font-weight: 500;
+  text-align: left;
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .store-badges a:hover {
@@ -98,11 +99,23 @@ header .tagline {
   cursor: not-allowed;
   pointer-events: none;
 }
+.store-badges .store-icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.store-badges .label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
 .store-badges .sub {
-  display: block;
   font-size: 11px;
   opacity: 0.7;
-  margin-bottom: 2px;
+}
+.store-badges .store {
+  font-size: 17px;
+  font-weight: 600;
 }
 
 section {
